@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Quicksand; 
+    src: url('Quicksand.otf') format("opentype");
+}
+body {
+    font-family:Quicksand;
+    background-color:#fff;
+  /* CSS declarations go here */
+}
+#back {
+  opacity:0.4;
+}
+#Bass_select{
+  margin-top:40px;
+}
+#Bass_select:hover {
+  color:#FF6600;
+}
+
+#Guitar_select:hover {
+  color:#FF6600;
+}
+#or {
+  color:#FF6600;
+}

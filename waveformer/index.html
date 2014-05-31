@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+ </head>
+  <body >
+    <b id="wrapper">
+      <a id="invert" onClick="invert()"><b>Invert</b></a>
+      <a id="back" onClick="back()"><b>| Clear |</b></a>
+      <a id="about" href="about.html"><b>About</b></a>
+    </b>
+    <div id="textbox">
+      <h1 id="title">WaveFormer</h1>
+      <a id="tag"><b>Frequency of Sample :</b></a>
+      <select type="number" id="freq" value="1">
+        <option value="0.25" selected="selected">0.25</option>
+        <option value="0.5">0.5</option>
+        <option value="1" >1</option>
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="8">8</option>
+      </select><br>
+      <a class="button" id="sample" style="" onClick="init('a.mp3')" ></a>
+      <a> or </a>
+      <a id="upload" style="" ></a>
+      <input type="file" id="hideupload" class="button" onChange="upload()">
+      <a> or </a>
+      <a class="button" value="Url: '" id="urlbut" onClick="init(document.getElementById('urlin').value)"></a>
+      <input id="urlin">
+    </div>
+    <script>
+      document.getElementById('upload').addEventListener('click', function(e) {
+      // Use the native click() of the file input.
+      document.getElementById('hideupload').click();
+      }, false);
+    </script>
+  </body>
+</html>

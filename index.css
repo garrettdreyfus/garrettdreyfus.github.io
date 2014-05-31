@@ -1,0 +1,67 @@
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+#firstpane{
+  min-width:650px;  
+  position:absolute;
+  top:0%;
+  text-align:center;
+  width:100%;
+  height:25%;
+  padding-top:0px;
+}
+#firstpane #title{
+  font-size:100px;
+  color:#000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; 
+  
+}
+
+
+#secondpane {
+  background-color:rgb(255,255,255,0.0);
+  height:75%;
+  position:absolute;
+  top:25%;
+  text-align:center;
+  width:100%;
+}
+#secondpane div{
+  padding-top:10px;
+}
+#secondpane a{
+  color:#3E3E3E;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400; 
+  font-size: 36px;
+  text-decoration:none;
+  padding-top:20px;
+
+}
+body {
+  padding-left:0%;
+  margin-left:0%;
+  padding-right:0%;
+  margin-right:0%;
+  padding-top:0%;
+  margin-top:0%;
+  min-width:650px;
+}
+#github{
+  position:absolute;
+  width:100%;
+  text-decoration:none;
+  text-align:center;
+  color:#3E3E3E;
+  font-family: 'Open Sans', sans-serif;
+  bottom:0%;
+}
+#github a{
+  text-decoration:none;
+  text-align:center;
+  color:#3E3E3E;
+  font-family: 'Open Sans', sans-serif;
+}
+
