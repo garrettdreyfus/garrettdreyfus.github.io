@@ -16,7 +16,7 @@ function init(url){
   ctx = new webkitAudioContext()
   audio = new Audio(url)
     // 2048 sample buffer, 1 channel in, 1 channel out  
-  processor = ctx.createJavaScriptNode(document.getElementById('freq').value*2048, 1, 1)
+  processor = ctx.createScriptProcessor(document.getElementById('freq').value*2048, 1, 1)
   var html = document.documentElement;
   var counter = 0;
   var overlay = document.getElementById('overlay');
