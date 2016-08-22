@@ -1,5 +1,4 @@
 h1 {
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 #firstpane{
@@ -8,7 +7,6 @@ h1 {
 #firstpane #title{
   font-size: 10vw;
   color:#000;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400; 
   
 }
