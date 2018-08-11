@@ -27,6 +27,7 @@ h1 {
 .center {
     margin: auto;
     width: 40%;
+    min-width:600px;
     padding: 10px;
 }
 
