@@ -23,9 +23,9 @@ h1 {
   /*text-align:center;*/
 }
 #me{
-  width:200px;
   height:200px;
 	float:left;
+	padding-right:30px;
 }
 #name{
 }
