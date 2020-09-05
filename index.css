@@ -24,6 +24,7 @@ h1 {
 }
 #me{
   height:200px;
+	width:auto;
 	float:left;
 	padding-right:30px;
 }
