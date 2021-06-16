@@ -21,7 +21,7 @@ a{color:blue;}
 html>body{font-size:14px;}
 
 body{
-    width:54em;
+    width:68em;
     padding:1.5em;
     padding-top:6em;
     margin: auto;
@@ -255,11 +255,11 @@ a:visited{color:#551A8B}
 }
 
 .outline-2{
-    margin:3em 0!important;
+    margin:2em 0!important;
 }
 
 
-body{padding-top:9em;padding-left:3em;}
+body{padding-top:9em;padding-left:1em;}
 .header{
     padding-left:3!important;
 }
