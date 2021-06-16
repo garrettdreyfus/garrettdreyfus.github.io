@@ -76,7 +76,7 @@ Next up is the measure of density which is ?the most widely? used. Potential den
      
 
 * Conclusion
-  Thanks for reading! I hope you got something out of this write up. My favorite part about density and neutral densities is the underlying tension between the oceanographers' desire for a measure of density which splits the ocean into well-defined surfaces upon which water travels throughout the ocean, and the reality that those don't really exist. Throw in the fact that the more complex density variables can be substansially more computationally expensive than the equation of state and it becomes clear that an oceanographer has to make a careful choice about what density variable is best for each problem they are working on.
+  Thanks for reading! I hope you got something out of this write up. The coolest part about density and neutral densities to me is the underlying tension between the oceanographers' desire for a measure of density which splits the ocean into well-defined surfaces upon which water travels throughout the ocean, and the reality that those don't really exist. Throw in the fact that the more complex density variables are often more computationally expensive than the simpler less neutral ones, and it becomes clear that an oceanographer has to make a careful choice about what density variable is best for each problem they are working on.
 
 * Other Density Variables
   Here are some one sentence descriptions of other density variables for fun.
@@ -85,7 +85,7 @@ Next up is the measure of density which is ?the most widely? used. Potential den
 ** Topobaric Density
    Pretend helicity does not exist and do fancy topology to find better density variable. 
 ** In-situ density anomaly surfaces
-   Consider difference from a reference salinity and temperature. Very cool and fun two thumbs up.  
+   Consider difference from a reference salinity and temperature. Very cool and fun two thumbs up. 
 
    
 * Bibliography 
