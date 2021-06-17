@@ -15,7 +15,6 @@ line-height:3em;
 
 body{
     font:100% "Georgia Serif", Times, Palatino, "Times New Roman", serif;
-    background: #DCDCDC;
 }
 a{color:blue;}
 html>body{font-size:14px;}
@@ -245,10 +244,7 @@ a:visited{color:#551A8B}
 
 
 .figure {
-    background:#ddd;
-    border:1px solid #ccc;
     font-size:.90em;
-    line-height:1.666em;
     padding:1.5em!important;
     text-align:left!important;
     margin-bottom:1.666em;
@@ -273,7 +269,6 @@ body{padding-top:9em;padding-left:1em;}
     padding-left:3em!important;
     border-bottom:none;
     color:inherit!important;
-    background:#dde8ff;
     border-bottom:1px solid #c3d9ff;
 }
 .header h1, .header h1 em {
