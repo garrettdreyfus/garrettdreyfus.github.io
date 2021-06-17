@@ -1,5 +1,5 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
-#+title: Neutral Variables !
+#+title: Neutral Variables!
 
 *  Who is this for?
   There are a number of densities floating around in the oceanographic world and it can be hard to understand the difference between them. This article aims to be a straightforward primer on oceanographic density for those with some background in physical oceanography. It is not meant to be overly rigorous as there is a lot of literature on the subject.
@@ -55,7 +55,7 @@ Next up is the measure of density which is ?the most widely? used. Potential den
  
 
 * Neutral Density
-  Helicity. Blech. But we are working oceanographers and helicity will not defeat us! We still want a density variables whose surfaces of constant density are well defined and as neutral as possible so we just have to make some tradeoffs! Enter Neutral Density! Neutral density was made in 1993 by Jacket and Macdougall (3) and here's a summarized (and simplified) recipe to create it. 
+  Helicity. Blech. But we are working oceanographers and helicity will not defeat us! We still want a density variable whose surfaces of constant density are well defined and as neutral as possible so we just have to make some tradeoffs! Enter Neutral Density! Neutral density was made in 1993 by Jacket and Macdougall (3) and here's a summarized (and simplified) recipe to create it. 
   1. Pick a reference global climatology.
      In their 1997 paper, Jackett and McDougall use the Leviticus climatology, but really we could use any climatology which provides us full-depth profiles of temperature and salinity throughout the world ocean.
   2. Choose a starting point.
