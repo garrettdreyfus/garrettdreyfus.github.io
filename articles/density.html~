@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-06-17 Thu 11:54 -->
+<!-- 2021-06-17 Thu 11:55 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neutral Variables!</title>
@@ -246,43 +246,43 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org74ed1dd">1. Who is this for?</a></li>
-<li><a href="#orge592919">2. In-situ density</a></li>
-<li><a href="#org718c43d">3. (My view of) A physical oceanographer's view of the ocean.</a></li>
-<li><a href="#orged002ef">4. Why is in-situ density not neutral?</a></li>
-<li><a href="#orgd3537a1">5. Potential density</a></li>
-<li><a href="#orgc0b21ee">6. The Neutral Tangent Plane and Helicity</a>
+<li><a href="#org09582df">1. Who is this for?</a></li>
+<li><a href="#orgf41269b">2. In-situ density</a></li>
+<li><a href="#org5c05ea0">3. (My view of) A physical oceanographer's view of the ocean.</a></li>
+<li><a href="#org1b3f75b">4. Why is in-situ density not neutral?</a></li>
+<li><a href="#org5bb32b9">5. Potential density</a></li>
+<li><a href="#orge490cd4">6. The Neutral Tangent Plane and Helicity</a>
 <ul>
-<li><a href="#orgd110aca">6.1. The Neutral Tangent Plane</a></li>
-<li><a href="#orgbf2832e">6.2. Helicity</a></li>
-<li><a href="#orgbf0715b">6.3. My clip art rendition of helicity</a></li>
-<li><a href="#orge7cc234">6.4. A way prettier version from Stanley 2019 (2)</a></li>
-<li><a href="#org7e4c43f">6.5. This graph shows some random walks following the neutral tangent plane through the OCCA climatology.</a></li>
+<li><a href="#orga29459a">6.1. The Neutral Tangent Plane</a></li>
+<li><a href="#org212ecef">6.2. Helicity</a></li>
+<li><a href="#org095a469">6.3. My clip art rendition of helicity</a></li>
+<li><a href="#orge93578d">6.4. A way prettier version from Stanley 2019 (2)</a></li>
+<li><a href="#org1349c7d">6.5. This graph shows some random walks following the neutral tangent plane through the OCCA climatology.</a></li>
 </ul>
 </li>
-<li><a href="#org06c9d96">7. Neutral Density</a>
+<li><a href="#orgf707c37">7. Neutral Density</a>
 <ul>
-<li><a href="#orgc25ce2b">7.1. Pick a reference global climatology.</a></li>
-<li><a href="#orgac7c105">7.2. Choose a starting point.</a></li>
-<li><a href="#orgb11a4fd">7.3. Spread throughout the ocean!</a></li>
-<li><a href="#org9d50ecd">7.4. Profit.</a></li>
+<li><a href="#org1c5df8b">7.1. Pick a reference global climatology.</a></li>
+<li><a href="#orgf0b6b93">7.2. Choose a starting point.</a></li>
+<li><a href="#org8c6b28e">7.3. Spread throughout the ocean!</a></li>
+<li><a href="#org166b898">7.4. Profit.</a></li>
 </ul>
 </li>
-<li><a href="#org03a6d84">8. Conclusion</a></li>
-<li><a href="#org35a6533">9. Other Density Variables</a>
+<li><a href="#org90475f8">8. Conclusion</a></li>
+<li><a href="#orgdd3a9cf">9. Other Density Variables</a>
 <ul>
-<li><a href="#org5fedb8e">9.1. Omega surfaces</a></li>
-<li><a href="#org1734b9c">9.2. In-situ density anomaly surfaces</a></li>
+<li><a href="#org0a3b9ad">9.1. Omega surfaces</a></li>
+<li><a href="#org113b88a">9.2. In-situ density anomaly surfaces</a></li>
 </ul>
 </li>
-<li><a href="#orgec0d57a">10. Thanks</a></li>
-<li><a href="#orgaabd3ba">11. Bibliography</a></li>
+<li><a href="#orgffc1064">10. Thanks</a></li>
+<li><a href="#org064374a">11. Bibliography</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org74ed1dd" class="outline-2">
-<h2 id="org74ed1dd"><span class="section-number-2">1</span> Who is this for?</h2>
+<div id="outline-container-org09582df" class="outline-2">
+<h2 id="org09582df"><span class="section-number-2">1</span> Who is this for?</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 There are a number of densities floating around in the oceanographic world and it can be hard to understand the difference between them. This article aims to be a straightforward primer on oceanographic density for those with some background in physical oceanography. It is not meant to be overly rigorous as there is a lot of literature on the subject.
@@ -290,8 +290,8 @@ There are a number of densities floating around in the oceanographic world and i
 </div>
 </div>
 
-<div id="outline-container-orge592919" class="outline-2">
-<h2 id="orge592919"><span class="section-number-2">2</span> In-situ density</h2>
+<div id="outline-container-orgf41269b" class="outline-2">
+<h2 id="orgf41269b"><span class="section-number-2">2</span> In-situ density</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 The in-situ density of seawater is the mass per unit volume of seawater as a function of its salinity, temperature, and pressure (depth).  In-situ density is experimentally determined in a lab, and software toolboxes like TEOS-10 (The Equation Of State 10) offer extremely accurate functional forms of in-situ density which anyone can use. Case closed then right? Wrong! While in-situ density gives us the mass per unit volume of any water parcel in the world ocean, oceanographers want more than density out of their density variable. To understand why, we're going to take a step back and look at the broader picture.
@@ -299,8 +299,8 @@ The in-situ density of seawater is the mass per unit volume of seawater as a fun
 </div>
 </div>
 
-<div id="outline-container-org718c43d" class="outline-2">
-<h2 id="org718c43d"><span class="section-number-2">3</span> (My view of) A physical oceanographer's view of the ocean.</h2>
+<div id="outline-container-org5c05ea0" class="outline-2">
+<h2 id="org5c05ea0"><span class="section-number-2">3</span> (My view of) A physical oceanographer's view of the ocean.</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 The ocean is on average 4 kilometers deep and has basins which are thousands of kilometers wide. The ocean is a thin film that lies on the crust of the earth. This may lead you to believe that the ocean is constantly mixing vertically from top to bottom, but the opposite is true. Beneath the top layer of the ocean, which is mixed by winds and weather, seawater mixes very little vertically. Once water slips beneath the surface it will often maintain the properties that it had when it was last at the surface.
@@ -314,15 +314,15 @@ Water resists being mixed vertically because it is stratified by density. Cold s
 </div>
 
 
-<div id="outline-container-orged002ef" class="outline-2">
-<h2 id="orged002ef"><span class="section-number-2">4</span> Why is in-situ density not neutral?</h2>
+<div id="outline-container-org1b3f75b" class="outline-2">
+<h2 id="org1b3f75b"><span class="section-number-2">4</span> Why is in-situ density not neutral?</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Let's now return to in-situ density. Consider two adjacent points in the ocean x<sub>0</sub> and x<sub>1</sub>, which have the same in-situ density, but different water properties (s<sub>0</sub>, t<sub>0</sub>, p<sub>0</sub>) and (s<sub>1</sub>, t<sub>1</sub>, p<sub>1</sub>) respectively. These points have the same in-situ density (mass over volume), but does that mean they lie on the same neutral surface? Well, if the two points are on the same neutral surface, then it should be that they can mix without any work. Let's pretend that both parcels of water mix at their mid-point. Without any loss of generality, let's assume that the water parcel at x<sub>0</sub> is at a lower pressure than the water at x<sub>1</sub>. This means to meet at their midpoint, the parcel that began at x<sub>0</sub> must rise, and the parcel that began at x<sub>1</sub> must sink. As the x<sub>0</sub> parcel rises, it is being crushed by less water above it, it expands, and becomes less dense. As the x<sub>1</sub> parcel sinks, it is being crushed by more water making it shrink and become more dense. By the time they meet in the middle, the parcel which began at x<sub>0</sub> is significantly less dense than the one at x<sub>1</sub>. This is illustrated in the gif below. We can consider the difference in the densities of these two water parcels at their midpoint a measure of their neutrality. If these two water parcels lay on the same neutral surface, that difference would be 0.  
 </p>
 
 
-<div id="orgb2b8d14" class="figure">
+<div id="org75ce62e" class="figure">
 <p><img src="Why_is_in-situ_density_not_neutral/2021-05-01_14-48-23_dens.gif" alt="2021-05-01_14-48-23_dens.gif" />
 </p>
 </div>
@@ -333,38 +333,38 @@ So what does that little thought experiment tell us really? It tells us that lin
 </div>
 </div>
 
-<div id="outline-container-orgd3537a1" class="outline-2">
-<h2 id="orgd3537a1"><span class="section-number-2">5</span> Potential density</h2>
+<div id="outline-container-org5bb32b9" class="outline-2">
+<h2 id="org5bb32b9"><span class="section-number-2">5</span> Potential density</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 Next up is the measure of density which is ?the most widely? used. Potential density is the density of a water parcel if it were moved to a reference pressure. Potential density approaches the problems with surfaces of constant in-situ density and says, "The real problem with in-situ density is the effect of pressure on density. Let's use the exact same equation of state, but let's treat water parcels like they are at a reference pressure instead of their actual pressure!" As a result, surfaces of constant potential density are far more neutral than surfaces of in-situ density near the reference pressure chosen. However, this does not actually solve the problems outlined in the previous section, as two parcels of water which lie on the same neutral surface do not rise/descend to some arbirtrary pressure to mix. They meet somewhere in between. In addition, the pressure of water parcels is important, and ignoring it can have some weird effects! Below is a section in the Atlantic ocean of Potential Density with a reference pressure of 0 dbar (\(\sigma_0\)). Circled in red is a region where water of higher potential density lies above water of lower potential density. This inversion of density, with less dense water above more dense water , is an artifact of our reference pressure being at the surface. If we were to look at the same chart but with a reference closer to that region (e.g. 4000 dbar) that inversion would disappear. Unfortunately, choosing a deeper reference may result in a density inversion closer to the surface. It's density whack-a-mole!
 </p>
 
 
-<div id="org56af37a" class="figure">
+<div id="org5232972" class="figure">
 <p><img src="Potential_density/2021-05-01_15-28-04_densinversion.png" alt="2021-05-01_15-28-04_densinversion.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc0b21ee" class="outline-2">
-<h2 id="orgc0b21ee"><span class="section-number-2">6</span> The Neutral Tangent Plane and Helicity</h2>
+<div id="outline-container-orge490cd4" class="outline-2">
+<h2 id="orge490cd4"><span class="section-number-2">6</span> The Neutral Tangent Plane and Helicity</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 OK. We've seen how surfaces of constant in-situ density and potential density aren't very neutral, but how do we construct a better one? The answer may appear simple; construct a surface that is perfectly neutral. The thing stopping us is called helicity. But first, a definition:
 </p>
 </div>
 
-<div id="outline-container-orgd110aca" class="outline-3">
-<h3 id="orgd110aca"><span class="section-number-3">6.1</span> The Neutral Tangent Plane</h3>
+<div id="outline-container-orga29459a" class="outline-3">
+<h3 id="orga29459a"><span class="section-number-3">6.1</span> The Neutral Tangent Plane</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Quickly and informally, we can define the neutral tangent plane as the path between two water columns upon which a water parcel would undergo no restoring force. In the discrete case, if we would like to find the neutral tangent plane which passes through (S<sub>0</sub> ,T<sub>0</sub> ,p<sub>0</sub> ) and an adjacent water column with salinity, temperature and pressure (S(p) ,T(p) ,p ) , we want to find where \(\rho(S(p),T(p),\frac{p+p_0}{2})=\rho(S(p),T(p),\frac{p+p_0}{2})\). To introduce just one more piece of jargon, we will call finding this solution "solving the level of neutral buoyancy equation."
 </p>
 
 
-<div id="org4889a8f" class="figure">
+<div id="org3e7032e" class="figure">
 <p><img src="The_Neutral_Tangent_Plane_and_Helicity/2021-06-16_15-27-55_ntp.gif" alt="2021-06-16_15-27-55_ntp.gif" />
 </p>
 </div>
@@ -376,39 +376,39 @@ To clear up this notation which may be confusing, S<sub>0</sub> , T<sub>0</sub> 
 </div>
 </div>
 
-<div id="outline-container-orgbf2832e" class="outline-3">
-<h3 id="orgbf2832e"><span class="section-number-3">6.2</span> Helicity</h3>
+<div id="outline-container-org212ecef" class="outline-3">
+<h3 id="org212ecef"><span class="section-number-3">6.2</span> Helicity</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
 In a just world, if we followed the neutral tangent plane throughout the ocean, we would be traveling along a perfectly neutral surface which we could label a certain density and go home. But the ocean is a cruel mistress. If you follow the neutral tangent plane through the ocean, hopping from one profile to the next in a big circle, when you return to where you started you will be at a different pressure. If you repeatedly go around in a circle, you will form a big corkscrew or helix and that is helicity. This means perfectly neutral surfaces are not well-defined and that at any given point in space there are multiple (maybe infinite) solutions for their depth. This isn't due to a lack of resolution in our sampling of the ocean, it's just due to the complex nature of the equation of state. An explanation of the math is out of the scope of this paper (check out (McDougall and Jackett 1988) ), but I think intuitively it makes some sense. The equation of state is a nonlinear four-dimensional function (three inputs and one output) so it makes some sense that some wonky stuff could happen. Furthermore, water doesn't travel along perfect surfaces throughout the ocean. As it travels it undergoes changes as it is mixed and modified. Our initial assumption that we could split the ocean into perfect layers was just that, an assumption, so we can't really expect it to hold up perfectly.
 </p>
 </div>
 </div>
-<div id="outline-container-orgbf0715b" class="outline-3">
-<h3 id="orgbf0715b"><span class="section-number-3">6.3</span> My clip art rendition of helicity</h3>
+<div id="outline-container-org095a469" class="outline-3">
+<h3 id="org095a469"><span class="section-number-3">6.3</span> My clip art rendition of helicity</h3>
 <div class="outline-text-3" id="text-6-3">
 
-<div id="orgf655a91" class="figure">
+<div id="orgf890297" class="figure">
 <p><img src="The_Neutral_Tangent_Plane_and_Helicity/2021-05-26_17-06-10_screenshot.png" alt="2021-05-26_17-06-10_screenshot.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orge7cc234" class="outline-3">
-<h3 id="orge7cc234"><span class="section-number-3">6.4</span> A way prettier version from Stanley 2019 (2)</h3>
+<div id="outline-container-orge93578d" class="outline-3">
+<h3 id="orge93578d"><span class="section-number-3">6.4</span> A way prettier version from Stanley 2019 (2)</h3>
 <div class="outline-text-3" id="text-6-4">
 
-<div id="org9030445" class="figure">
+<div id="orgcdb2f8b" class="figure">
 <p><img src="The_Neutral_Tangent_Plane_and_Helicity/2021-06-16_14-56-28_screenshot.png" alt="2021-06-16_14-56-28_screenshot.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org7e4c43f" class="outline-3">
-<h3 id="org7e4c43f"><span class="section-number-3">6.5</span> This graph shows some random walks following the neutral tangent plane through the OCCA climatology.</h3>
+<div id="outline-container-org1349c7d" class="outline-3">
+<h3 id="org1349c7d"><span class="section-number-3">6.5</span> This graph shows some random walks following the neutral tangent plane through the OCCA climatology.</h3>
 <div class="outline-text-3" id="text-6-5">
 
-<div id="orga402f18" class="figure">
+<div id="orgcde011c" class="figure">
 <p><img src="The_Neutral_Tangent_Plane_and_Helicity/2021-06-16_15-00-11_screenshot.png" alt="2021-06-16_15-00-11_screenshot.png" />
 </p>
 </div>
@@ -417,58 +417,58 @@ In a just world, if we followed the neutral tangent plane throughout the ocean, 
 </div>
 
 
-<div id="outline-container-org06c9d96" class="outline-2">
-<h2 id="org06c9d96"><span class="section-number-2">7</span> Neutral Density</h2>
+<div id="outline-container-orgf707c37" class="outline-2">
+<h2 id="orgf707c37"><span class="section-number-2">7</span> Neutral Density</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 Helicity. Blech. But we are working oceanographers and helicity will not defeat us! We still want a density variable whose surfaces of constant density are well defined and as neutral as possible so we just have to make some tradeoffs! Enter Neutral Density! Neutral density was made in 1993 by Jacket and Macdougall (3) and here's a summarized (and simplified) recipe to create it. 
 </p>
 </div>
-<div id="outline-container-orgc25ce2b" class="outline-3">
-<h3 id="orgc25ce2b"><span class="section-number-3">7.1</span> Pick a reference global climatology.</h3>
+<div id="outline-container-org1c5df8b" class="outline-3">
+<h3 id="org1c5df8b"><span class="section-number-3">7.1</span> Pick a reference global climatology.</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 In their 1997 paper, Jackett and McDougall use the Leviticus climatology, but really we could use any climatology which provides us full-depth profiles of temperature and salinity throughout the world ocean.
 </p>
 </div>
 </div>
-<div id="outline-container-orgac7c105" class="outline-3">
-<h3 id="orgac7c105"><span class="section-number-3">7.2</span> Choose a starting point.</h3>
+<div id="outline-container-orgf0b6b93" class="outline-3">
+<h3 id="orgf0b6b93"><span class="section-number-3">7.2</span> Choose a starting point.</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 Once we have a global climatology we can select a single profile we will be using as a reference and mark what our new density variable is at each pressure. One fun thing to note here is that the labeling doesn't really matter that much as long as it is increasing. However, neutral density is labelled in such a way that neutral density roughly matches up with in-situ density referenced to the surface in the equatorial pacific, and that the density difference between two neutral surfaces reflects the stratification. Ultimately, those choices make using neutral density more useful and familiar to oceanographers.
 </p>
 
 
-<div id="org1c15a86" class="figure">
+<div id="org21b71ac" class="figure">
 <p><img src="Neutral_Density/2021-06-16_15-17-39_screenshot.png" alt="2021-06-16_15-17-39_screenshot.png" />
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgb11a4fd" class="outline-3">
-<h3 id="orgb11a4fd"><span class="section-number-3">7.3</span> Spread throughout the ocean!</h3>
+<div id="outline-container-org8c6b28e" class="outline-3">
+<h3 id="org8c6b28e"><span class="section-number-3">7.3</span> Spread throughout the ocean!</h3>
 <div class="outline-text-3" id="text-7-3">
 <p>
 Now comes the hard work. Beginning with the reference profile we chose, for each labeled depth we solve for the level of neutral buoyancy between that point on the reference profile, and each adjacent profile in the climatology. We can then repeat this process for each profile we just labelled and the profiles surrounding it, spreading out over the ocean. If we repeat this process throughout our entire climatology we will assemble a global set of approximate neutral surfaces that all pass through our reference profile. Then for every water parcel x<sub>0</sub> in our climatology we can assign it the density value of the water parcel it is approximately neutral to from our reference profile.
 </p>
 
-<div id="org7d5fe0f" class="figure">
+<div id="org609b073" class="figure">
 <p><img src="Neutral_Density/2021-06-16_15-27-16_clim.gif" alt="2021-06-16_15-27-16_clim.gif" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org9d50ecd" class="outline-3">
-<h3 id="org9d50ecd"><span class="section-number-3">7.4</span> Profit.</h3>
+<div id="outline-container-org166b898" class="outline-3">
+<h3 id="org166b898"><span class="section-number-3">7.4</span> Profit.</h3>
 <div class="outline-text-3" id="text-7-4">
 <p>
 So now we have created a global climatology of neutral density, but that doesn't yet help someone to wants to know the neutral density for their latest experiment. If someone comes to us with information about the temperature, salinity, pressure, latitude and longitude of some piece of water in the ocean we know that that piece of water is surrounded by profiles in our global climatology. We can then solve the discrete neutral relation for what pressure on those surrounding climatology profiles is neutral to the given water parcel. Each of the pressures on our surrounding climatology profiles is associated with a labelled neutral density, and we can then take an average of those densities, weighted by the distance of the input water parcel from each of the surrounding climatology profiles, to find the neutral density of the supplied water parcel.
 </p>
 
 
-<div id="org41ed278" class="figure">
+<div id="org763bb60" class="figure">
 <p><img src="Neutral_Density/2021-06-16_15-27-41_find.gif" alt="2021-06-16_15-27-41_find.gif" />
 </p>
 </div>
@@ -478,8 +478,8 @@ So now we have created a global climatology of neutral density, but that doesn't
 
 
 
-<div id="outline-container-org03a6d84" class="outline-2">
-<h2 id="org03a6d84"><span class="section-number-2">8</span> Conclusion</h2>
+<div id="outline-container-org90475f8" class="outline-2">
+<h2 id="org90475f8"><span class="section-number-2">8</span> Conclusion</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 Thanks for reading! I hope you got something out of this write up. The coolest part about density and neutral densities to me is the underlying tension between the oceanographer's desire for a measure of density which splits the ocean into well-defined surfaces upon which water travels throughout the ocean, and the reality that those don't really exist. Throw in the fact that the more complex density variables are often more computationally expensive than the simpler less neutral ones, and it becomes clear that an oceanographer has to make a careful choice about what density variable is best for each problem they are working on. Feel free to reach out to me at garrettdreyfus at gmail dot com.
@@ -487,23 +487,23 @@ Thanks for reading! I hope you got something out of this write up. The coolest p
 </div>
 </div>
 
-<div id="outline-container-org35a6533" class="outline-2">
-<h2 id="org35a6533"><span class="section-number-2">9</span> Other Density Variables</h2>
+<div id="outline-container-orgdd3a9cf" class="outline-2">
+<h2 id="orgdd3a9cf"><span class="section-number-2">9</span> Other Density Variables</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 Here are some one-sentence descriptions of other density variables for fun.
 </p>
 </div>
-<div id="outline-container-org5fedb8e" class="outline-3">
-<h3 id="org5fedb8e"><span class="section-number-3">9.1</span> Omega surfaces</h3>
+<div id="outline-container-org0a3b9ad" class="outline-3">
+<h3 id="org0a3b9ad"><span class="section-number-3">9.1</span> Omega surfaces</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Treat surfaces as an optimization problem and minimize error everywhere.
 </p>
 </div>
 </div>
-<div id="outline-container-org1734b9c" class="outline-3">
-<h3 id="org1734b9c"><span class="section-number-3">9.2</span> In-situ density anomaly surfaces</h3>
+<div id="outline-container-org113b88a" class="outline-3">
+<h3 id="org113b88a"><span class="section-number-3">9.2</span> In-situ density anomaly surfaces</h3>
 <div class="outline-text-3" id="text-9-2">
 <p>
 Consider difference from a reference salinity and temperature. Very cool and fun &#x2014; two thumbs up. 
@@ -512,8 +512,8 @@ Consider difference from a reference salinity and temperature. Very cool and fun
 </div>
 </div>
 
-<div id="outline-container-orgec0d57a" class="outline-2">
-<h2 id="orgec0d57a"><span class="section-number-2">10</span> Thanks</h2>
+<div id="outline-container-orgffc1064" class="outline-2">
+<h2 id="orgffc1064"><span class="section-number-2">10</span> Thanks</h2>
 <div class="outline-text-2" id="text-10">
 <p>
 Thanks to Geoff Stanley for reading this over and providing corrections where I went wrong!
@@ -521,8 +521,8 @@ Thanks to Geoff Stanley for reading this over and providing corrections where I 
 </div>
 </div>
 
-<div id="outline-container-orgaabd3ba" class="outline-2">
-<h2 id="orgaabd3ba"><span class="section-number-2">11</span> Bibliography</h2>
+<div id="outline-container-org064374a" class="outline-2">
+<h2 id="org064374a"><span class="section-number-2">11</span> Bibliography</h2>
 <div class="outline-text-2" id="text-11">
 <ol class="org-ol">
 <li>McDougall, T. J., and D. R. Jackett. 1988. On the helical nature of neutral trajectories in the ocean. Progress in Oceanography 20: 153–183. <a href="https://doi.org/10.1016/0079-6611(88)">doi:10.1016/0079-6611(88)</a>90001-8</li>
@@ -534,7 +534,7 @@ Thanks to Geoff Stanley for reading this over and providing corrections where I 
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Garrett Finucane</p>
-<p class="date">Created: 2021-06-17 Thu 11:54</p>
+<p class="date">Created: 2021-06-17 Thu 11:55</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -33,7 +33,7 @@ Next up is the measure of density which is ?the most widely? used. Potential den
   OK. We've seen how surfaces of constant in-situ density and potential density aren't very neutral, but how do we construct a better one? The answer may appear simple; construct a surface that is perfectly neutral. The thing stopping us is called helicity. But first, a definition:
   
 ** The Neutral Tangent Plane
-   Quickly and informally, we can define the neutral tangent plane as the path between two water columns upon which a water parcel would undergo no restoring force. In the discrete case, if we would like to find the neutral tangent plane which passes through (S_0 ,T_0 ,p_0 ) and an adjacent water column with salinity, temperature and pressure (S(p) ,T(p) ,p ) , we want to find where $\rho(S(p),T(p),\frac{p+p_0}{2})=\rho(S(p),T(p),\frac{p+p_0}{2})$. To introduce just one more piece of jargon, we will call finding this solution "solving the level of neutral buoyancy equation."
+   Quickly and informally, we can define the neutral tangent plane as the path between two water columns upon which a water parcel would undergo no buoyancy restoring force. In the discrete case, if we would like to find the neutral tangent plane which passes through (S_0 ,T_0 ,p_0 ) and an adjacent water column with salinity, temperature and pressure (S(p) ,T(p) ,p ) , we want to find where $\rho(S(p),T(p),\frac{p+p_0}{2})=\rho(S(p),T(p),\frac{p+p_0}{2})$. To introduce just one more piece of jargon, we will call finding this solution "solving the level of neutral buoyancy equation."
 
 #+DOWNLOADED: file:///home/garrett/Downloads/boop/ntp.gif @ 2021-06-16 15:27:55
 [[file:The_Neutral_Tangent_Plane_and_Helicity/2021-06-16_15-27-55_ntp.gif]]
@@ -56,9 +56,9 @@ Next up is the measure of density which is ?the most widely? used. Potential den
  
 
 * Neutral Density
-  Helicity. Blech. But we are working oceanographers and helicity will not defeat us! We still want a density variable whose surfaces of constant density are well defined and as neutral as possible so we just have to make some tradeoffs! Enter Neutral Density! Neutral density was made in 1993 by Jacket and Macdougall (3) and here's a summarized (and simplified) recipe to create it. 
+  Helicity. Blech. But we are working oceanographers and helicity will not defeat us! We still want a density variable whose surfaces of constant density are well defined and as neutral as possible so we just have to make some tradeoffs! Enter Neutral Density! Neutral density was made in 1997 by Jacket and Macdougall (3) and here's a summarized (and simplified) recipe to create it. 
 ** Pick a reference global climatology.
-     In their 1997 paper, Jackett and McDougall use the Leviticus climatology, but really we could use any climatology which provides us full-depth profiles of temperature and salinity throughout the world ocean.
+     In their 1997 paper, Jackett and McDougall use the Levitus climatology, but really we could use any climatology which provides us full-depth profiles of temperature and salinity throughout the world ocean.
 ** Choose a starting point.
     Once we have a global climatology we can select a single profile we will be using as a reference and mark what our new density variable is at each pressure. One fun thing to note here is that the labeling doesn't really matter that much as long as it is increasing. However, neutral density is labelled in such a way that neutral density roughly matches up with in-situ density referenced to the surface in the equatorial pacific, and that the density difference between two neutral surfaces reflects the stratification. Ultimately, those choices make using neutral density more useful and familiar to oceanographers.
     
@@ -88,7 +88,7 @@ Next up is the measure of density which is ?the most widely? used. Potential den
    Consider difference from a reference salinity and temperature. Very cool and fun --- two thumbs up. 
 
 * Thanks
-  Thanks to Geoff Stanley for reading this over and providing corrections where I went wrong!
+  Thanks to Geoff Stanley and Andrew Stewart for reading this over and providing corrections where I went wrong!
    
 * Bibliography 
   1. McDougall, T. J., and D. R. Jackett. 1988. On the helical nature of neutral trajectories in the ocean. Progress in Oceanography 20: 153–183. doi:10.1016/0079-6611(88)90001-8
