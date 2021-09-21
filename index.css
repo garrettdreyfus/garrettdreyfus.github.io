@@ -2,7 +2,7 @@ h1 {
   text-decoration: none;
 }
 #firstpane{
-    /*text-align:center;*/
+    padding-top:40px;
 }
 #title{
   text-align:left;
@@ -75,7 +75,9 @@ dd{
 	display:block;
 
 }
-
+body {
+	border: 5px solid #AFEDAF;
+}
 a{
   color:#3E3E3E;
   font-weight: 400; 
