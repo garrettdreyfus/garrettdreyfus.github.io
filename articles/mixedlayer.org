@@ -1,0 +1,42 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="blog.css" />
+#+title: Mixed Layer Machine Learning
+     
+* What is the mixed layer and why do we care about it?
+  The ocean's interior is so stratified by density that water formed in the North Atlantic is able to travel for hundreds of years through the deep ocean and for the most part maintain its same salinity and temperature. However at the very top of the ocean, changes in temperature, winds, and waves, are able to mix so well that quantities like temperature and salinity are nearly constant with depth. This layer of well-mixed water at the top of the ocean is known as the mixed layer. As the only part of the ocean directly in contact with the atmopshere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior making it important to Physical Oceanographers. Phytoplankton that live in the mixed layer want a mixed layer shallow enough to see light and deep enough to pick up some nutrients making it important to Biological Oceanographers.
+  
+* How is it measured?
+  There are two most commonly used mixed layer depth algorithms. The first is the De Boyer Montegut (2004) temperature or density threshold method which looks for depth at which the temperature has increased by __ C or __ kg/m^3 from the surface. The second is the Holte and Talley algorithm () that employs a decision tree to choose between the methods of De Boyer Montegut and a number of other metrics. In doing so, the Holte and Talley algorithm seeks to outperform to do a better job at finding the mixed layer depth in high latitude profiles where the thresholds fail.
+
+  Ultimately, the gold standard for determing the depth of the mixed layer from depth profiles of salinity, temperature and pressure is an oceanographer's visual identification. Both the algorithm's of De Boyer Montegut and Holte and Talley were developed to match the mixed layer depth as visually identified by the algorithm's creator.
+
+* The survey!
+  In reading about the mixed layer depth and the algorithms that are used to calculate it I became very interested in two things:
+  1. How do well oceanographers themselves agree on the mixed layer depth
+     ? The spread of oceanographer's identification of the mixed layer would provide us with a lower bound on the error we can expect in calculating the mixed layer depth.
+  2. Could a machine learning model provided with the mixed layer depth as identified by oceanographers better estimate the mixed layer depth than existing methods?
+  To answer this question I created this survey. The survey displays 150 hydrographic profiles from all across the world (), and over different seasons. To date, I have collected ~1500 identifications. Feel free to respond if you are familiar with the mixed layer!
+  
+* How do oceanographer's do?
+  Before we get into the machine learning let's first look at how good oceanographer's are at actually determing the mixed layer. The two panel figure below shows the distribution of the average difference between a respondants answer and the average answer for each profile. The distribution on the left shows that error as it is and tells us the average respondant
+  The figure on the right shows the distribution of the error as a fraction of the mean at each profile. So, 1 on the x axis means that the average error from the mean is the same size as the mean itself. 
+  
+** Split or spread?
+   In looking at the profiles in which oceanographers differed the most it is clear that their disagreement is often on profiles where are multiple "mixed layers". Below are examples.
+
+* How do the algorithms do?
+  
+* The Random Forest Model
+** Splitting the data and training
+   I split the profiles randomly into two equally large testing and training datasets. As there are significant differences in identifying the mixed layer depth in high latitude locations, I ensured that half of the high latitude sites were in the test set and half were in the training set.
+** Choosing features
+   I first naively provided the random forest algorithm with the raw density at each pressure as input features. This resulted in predictions that were far from the mean oceanographer idenified mixed layer depth. I then tried using the gradient of density which yielded better results but was still not particularly performant. My next step was using every metric used in the Holte and Talley mixed layer algorithm as an input feature. This yielded farther better results and on examining the importance of the features (further discussion below) I ended up using three of the measures used in the Holte and Talley algorithm: the temperature threshold criteria (originally of de Boyer Montegut), the density threshold criteria (originally of de Boyer Montegut) and the mixed layer pycnocline fit of (Holte and Talley).
+   
+** Performance and caveats
+   The random forest model trained on just these three features performs very similarly to the Holte and Talley algorithm at guessing the average oceanographer identified mixed layer depth. Due to the inherent limitations of a dataset this size it is difficult to determine if the marginal improvement over the Holte and Talley algorithm is significant. Both the Holte and Talley algorithm have a mean difference from the mean oceanographer identified mixed layer depth which is smaller than the standard deviation of oceanographer identified mixed layer depth. This suggests that both are doing about as well as an algorithm could hope to do at identifying the mixed layer depth
+
+   One area in which the random forest model does clearly excell is in its insensitivity in changes to the hydrographic values of the profile. The Holte and Talley algorithm's decision tree which makes it better at finding the mixed layer depth in high latitude profiles also makes it relatively more sensitive to change in its input data. Small changes in the input can lead the algorithm down wildly different paths of the decision tree, leading it to a very different mixed layer calculation. The random forest on the other hand is less sensitive to small changes in a profile because it's output is the average of a 100 decision trees, and not constrained to choosing its output from its input features. Below is a figure showing on the left, an Argo profile with its temperature and salinity randomly perturbed __ and __  100 times (the argo accuracy limits), and on the right the deviation of the Holte and Talley Algorithm, the random forest and the density threshold method from its  mean value over those hundred random perturbations. As you can see the Holte and Talley algorithm jumps between two mixed layer depth selections 25 dbar apart, while the density threshold and random forest method stay almost in the same spot. This does not happen in all profiles, but this profile was selected to show that sensitivity.
+   
+
+* What can the Random Forest tell us about how oceanographers find the mixed layer?
+  In order to build the 
+  
