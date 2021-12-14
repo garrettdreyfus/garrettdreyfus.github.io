@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-12-14 Tue 10:53 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mixed Layer Survey</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="blog.css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Mixed Layer Survey</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5401af4">1. What is the mixed layer?</a></li>
+<li><a href="#org41c76fb">2. How do we use computers to find the depth of the mixed layer?</a></li>
+<li><a href="#orgae3fb68">3. Do oceanographers visually identify the same mixed layer depth?</a></li>
+<li><a href="#org21fc5b6">4. Creating a survey</a></li>
+<li><a href="#org35d76c0">5. Results</a></li>
+<li><a href="#org7035379">6. Hm&#x2026;</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5401af4" class="outline-2">
+<h2 id="org5401af4"><span class="section-number-2">1</span> What is the mixed layer?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Water in most of the ocean is highly stratified by density, which results in salinity and temperature remaining unchanged at different depths even as the water circulates over long periods of time (think centuries). The only exception is the very top of the ocean, where the sun’s heat and the wind and waves mix the water. This layer of well-mixed water is known as the mixed layer. As the only part of the ocean directly in contact with the atmosphere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior. This makes the depth of that mixed layer an important quantity for oceanographers whether they are physicists, biologists, or chemists.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41c76fb" class="outline-2">
+<h2 id="org41c76fb"><span class="section-number-2">2</span> How do we use computers to find the depth of the mixed layer?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+There are two most commonly used mixed layer depth algorithms. The first is the De Boyer Montegut (2004) (from now on DBM04) temperature or density threshold method which looks for the depth at which the temperature has increased by 0.2 C or the density has increased by  0.03 kg/m<sup>3</sup> from the surface. Density threshold methods tend to perform poorer in sites of deep mixing. To remedy this, the second most commonly used mixed layer depth algorithm, the Holte and Talley (2009) density algorithm (from now on HT09) , employs a decision tree to choose between the threshold methods of DBM04and other metrics in sites of deep mixing. 
+</p>
+
+<p>
+Ultimately, because there is no precise definition of the ocean’s mixed layer, the gold standard for determining the depth of the mixed layer from depth profiles of salinity, temperature and pressure is an oceanographer's individual assessment after looking at the data. The algorithms of DBM04 and HT09 were both developed to match the mixed layer depth as visually identified by the algorithm's creator. The figure below shows an example depth profile of density with the DBM04 and HT09 algorithm outputs, as well as the visually identified mixed layer depths (VIMLDs) of oceanographers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae3fb68" class="outline-2">
+<h2 id="orgae3fb68"><span class="section-number-2">3</span> Do oceanographers visually identify the same mixed layer depth?</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+If the gold standard for the mixed layer depth is the VIMLDs of oceanographers, how do well oceanographers agree on the mixed layer depth? Is it as easy as it can seem in simple examples? The spread of oceanographer's identification of the mixed layer would provide us with a lower bound on the error we can expect in calculating the mixed layer depth with computer algorithms.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org21fc5b6" class="outline-2">
+<h2 id="org21fc5b6"><span class="section-number-2">4</span> Creating a survey</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+To answer this question I created this survey using node.js and mongodb. The survey displays 150 hydrographic profiles from all across the world, and over different seasons. To date, I have collected ~1200 identifications from about 24 respondents. All the respondents whose data was considered in this post are undergraduates, graduate students, or professors who do oceanographic research. Feel free to respond if you are familiar with the mixed layer!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35d76c0" class="outline-2">
+<h2 id="org35d76c0"><span class="section-number-2">5</span> Results</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Let's first look at how good oceanographers are at actually determining the depth of the mixed layer. The figure above shows the distribution of the average difference between a respondent’s answer and the average answer for each profile. High latitude profiles are taken above 60°S, low latitude profiles are taken below 60°S. The blue vertical line shows the median error, and the red the mean. These results show that the standard deviation of oceanographer identifications is on average 30% of the average mixed layer depth. 
+</p>
+
+<p>
+It is worth looking at more at the raw VIMLD's to see the source of this disagreement. Namely, the question that I had was whether oceanographer's VIMLD's are split, or spread? If their answers are split between two or more depths, that suggests a fundamental disagreement in the MLD, however a spread would mean oceanographers agree roughly on the location but aren't very precise.
+</p>
+
+<p>
+From browsing through the profiles I got the sense that in locations with large disagreements it was almost always a question of split rather than spread. Some examples are included below.
+</p>
+
+<p>
+I wanted to find a way to quantify the "splitness" of a set of answers. I settled on looking at the VIMLD's before and after splitting them by their mean. In the case of a perfectly normal distribution the variance of either half around the mean is equivalent to the mean of the total distribution. In the case of two normal distributions N(mean=-100,std=10) + N(mean=100,std=10), the variance of their sum would be 100, but split by their mean it would be 10. This analysis disregards the possibility of answers being split around more than two depths, and it is certainly limited by the relatively small numbers of data points we have on each profile, but hopefully it gives some view into the way VIMLD's are distributed.
+</p>
+
+<p>
+If the distribution of responses is bipolar it is a bit troubling, because it suggests that the average of a large number of oceanographer VIMLDs will not converge to a depth that either group of oceanographers would identify as the MLD. Some thoughts on ways to address this are mentioned at the end of the followup to this article "Mixed Layer Random Forest Model".
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7035379" class="outline-2">
+<h2 id="org7035379"><span class="section-number-2">6</span> Hm&#x2026;</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+This survey was a fun project. Ultimately it is limited by the number of respondants and profiles, but I think it shows how slippery a quantity the mixed layer depth really is. The VIMLD's, profiles, and code are all available on github. If by any chance there are a large number of additional responses to the survey I will update the data in the repository. If you have any trouble with them let me know over email!
+</p>
+
+<p>
+This article's follow up on training a machine learning model to better estimate the mean VIMLD is here.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-12-14 Tue 10:53</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
