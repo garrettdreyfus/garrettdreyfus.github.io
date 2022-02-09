@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-02-09 Wed 15:09 -->
+<!-- 2021-12-27 Mon 08:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mixed Layer Survey</title>
@@ -223,37 +223,35 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8824e1d">1. What is the mixed layer?</a></li>
-<li><a href="#orga1c41cd">2. How do we use computers to find the depth of the mixed layer?</a></li>
-<li><a href="#orgab00495">3. Do oceanographers visually identify the same mixed layer depth?</a></li>
-<li><a href="#org55319f5">4. Creating a survey</a></li>
-<li><a href="#org3428fca">5. Results</a></li>
-<li><a href="#org7888ca2">6. Closing thoughts</a></li>
+<li><a href="#org90e3d16">1. What is the mixed layer?</a></li>
+<li><a href="#orgd46b0e3">2. How do we use computers to find the depth of the mixed layer?</a></li>
+<li><a href="#orgc7ef95a">3. Do oceanographers visually identify the same mixed layer depth?</a></li>
+<li><a href="#org8bcf478">4. Creating a survey</a></li>
+<li><a href="#org8b36b60">5. Results</a></li>
+<li><a href="#org5321bbb">6. Closing thoughts</a></li>
 </ul>
 </div>
 </div>
 
-
-
-
-<div id="outline-container-org8824e1d" class="outline-2">
-<h2 id="org8824e1d"><span class="section-number-2">1</span> What is the mixed layer?</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Water in most of the ocean is highly stratified by density, which results in salinity and temperature remaining unchanged at different depths even as the water circulates over long periods of time (think centuries). The notable exception is the very top of the ocean, where the sun’s heat and the wind and waves mix the water. This layer of well-mixed water is known as the mixed layer. As the only part of the ocean directly in contact with the atmosphere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior. This makes the depth of that mixed layer an important quantity for oceanographers whether they are physicists, biologists, or chemists.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orga1c41cd" class="outline-2">
-<h2 id="orga1c41cd"><span class="section-number-2">2</span> How do we use computers to find the depth of the mixed layer?</h2>
-<div class="outline-text-2" id="text-2">
-
-<div id="org1e39657" class="figure">
+<div id="org9d5ee65" class="figure">
 <p><img src="2021-12-27_08-15-00_prof.png" alt="2021-12-27_08-15-00_prof.png" />
 </p>
 </div>
 
+
+
+<div id="outline-container-org90e3d16" class="outline-2">
+<h2 id="org90e3d16"><span class="section-number-2">1</span> What is the mixed layer?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Water in most of the ocean is highly stratified by density, which results in salinity and temperature remaining unchanged at different depths even as the water circulates over long periods of time (think centuries). The only exception is the very top of the ocean, where the sun’s heat and the wind and waves mix the water. This layer of well-mixed water is known as the mixed layer. As the only part of the ocean directly in contact with the atmosphere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior. This makes the depth of that mixed layer an important quantity for oceanographers whether they are physicists, biologists, or chemists.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd46b0e3" class="outline-2">
+<h2 id="orgd46b0e3"><span class="section-number-2">2</span> How do we use computers to find the depth of the mixed layer?</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 There are two most commonly used mixed layer depth algorithms. The first is the De Boyer Montegut (2004) (from now on DBM04) temperature or density threshold method which looks for the depth at which the temperature has increased by 0.2 C or the density has increased by  0.03 kg/m<sup>3</sup> from the surface. Density threshold methods tend to perform poorer in sites of deep mixing. To remedy this, the second most commonly used mixed layer depth algorithm, the Holte and Talley (2009) density algorithm (from now on HT09) , employs a decision tree to choose between the threshold methods of DBM04and other metrics in sites of deep mixing. 
 </p>
@@ -264,8 +262,8 @@ Ultimately, because there is no precise definition of the ocean’s mixed layer,
 </div>
 </div>
 
-<div id="outline-container-orgab00495" class="outline-2">
-<h2 id="orgab00495"><span class="section-number-2">3</span> Do oceanographers visually identify the same mixed layer depth?</h2>
+<div id="outline-container-orgc7ef95a" class="outline-2">
+<h2 id="orgc7ef95a"><span class="section-number-2">3</span> Do oceanographers visually identify the same mixed layer depth?</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 If the gold standard for the mixed layer depth is the VIMLDs of oceanographers, how do well oceanographers agree on the mixed layer depth? Is it as easy as it can seem in simple examples? The spread of oceanographer's identification of the mixed layer would provide us with a lower bound on the error we can expect in calculating the mixed layer depth with computer algorithms.
@@ -273,8 +271,8 @@ If the gold standard for the mixed layer depth is the VIMLDs of oceanographers, 
 </div>
 </div>
 
-<div id="outline-container-org55319f5" class="outline-2">
-<h2 id="org55319f5"><span class="section-number-2">4</span> Creating a survey</h2>
+<div id="outline-container-org8bcf478" class="outline-2">
+<h2 id="org8bcf478"><span class="section-number-2">4</span> Creating a survey</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 To answer this question I created this survey using Node.js and mongodb. The survey displays 150 hydrographic profiles from all across the world, and over different seasons. To date, I have collected ~1200 identifications from about 24 respondents. All the respondents whose data was considered in this post are undergraduates, graduate students, or professors who do oceanographic research. Feel free to respond if you are familiar with the mixed layer!
@@ -282,11 +280,11 @@ To answer this question I created this survey using Node.js and mongodb. The sur
 </div>
 </div>
 
-<div id="outline-container-org3428fca" class="outline-2">
-<h2 id="org3428fca"><span class="section-number-2">5</span> Results</h2>
+<div id="outline-container-org8b36b60" class="outline-2">
+<h2 id="org8b36b60"><span class="section-number-2">5</span> Results</h2>
 <div class="outline-text-2" id="text-5">
 
-<div id="org0d1c0f6" class="figure">
+<div id="org021675c" class="figure">
 <p><img src="Results/2021-12-27_08-14-08_obsstd.png" alt="2021-12-27_08-14-08_obsstd.png" />
 </p>
 </div>
@@ -313,21 +311,21 @@ If the distribution of responses is bipolar it is a bit troubling, because it su
 </div>
 </div>
 
-<div id="outline-container-org7888ca2" class="outline-2">
-<h2 id="org7888ca2"><span class="section-number-2">6</span> Closing thoughts</h2>
+<div id="outline-container-org5321bbb" class="outline-2">
+<h2 id="org5321bbb"><span class="section-number-2">6</span> Closing thoughts</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 This survey was a fun project. Ultimately it is limited by the number of respondants and profiles, but I think it shows how slippery a quantity the mixed layer depth can be. The VIMLD's, profiles, and code are all available on github. If by any chance there are a large number of additional responses to the survey I will update the data in the repository. If you have any trouble with them let me know over email!
 </p>
 
 <p>
-This article's follow up on training a machine learning model to better estimate the mean VIMLD will be posted shortly.
+This article's follow up on training a machine learning model to better estimate the mean VIMLD is here.
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2022-02-09 Wed 15:09</p>
+<p class="date">Created: 2021-12-27 Mon 08:15</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
