@@ -50,14 +50,14 @@ h1 {
 p{
   color:#3E3E3E;
   font-weight: 400; 
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration:none;
 }
 dt{
   color:#3E3E3E;
   font-weight: 400; 
-  font-size: 1.9em;
-  text-decoration:none;
+  font-size: 1.3em;
+  text-decoration:italic;
 }
 dd{
   color:#3E3E3E;
@@ -68,11 +68,13 @@ dd{
   padding:0.1em;
 }
 #gh{
-  font-size: 1.9em;
-	text-align:center;
-	margin:auto;
-	width:200px;
-	display:block;
+  font-size: 1.2em;
+  text-align:center;
+  margin:auto;
+  width:200px;
+  display:block;
+  font-weight: 400; 
+  text-decoration:underline;
 
 }
 body {
@@ -82,8 +84,9 @@ body {
 a{
   color:#3E3E3E;
   font-weight: 400; 
-  text-decoration:none;
-  border-bottom: 1.5px solid #E8AE0C;
+  text-decoration-color: #E8AE0C !important;
+  text-decoration:underline;
+
 
 }
 
