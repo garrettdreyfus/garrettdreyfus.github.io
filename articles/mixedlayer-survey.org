@@ -38,5 +38,3 @@ From browsing through the profiles I got the sense that in locations with large 
 * Closing thoughts
 
   This survey was a fun project. Ultimately it is limited by the number of respondants and profiles, but I think it shows how slippery a quantity the mixed layer depth can be. Please write me if you would be interested in viewing the data.
-
-This article's follow up on training a machine learning model to better estimate the mean VIMLD will be posted shortly.
