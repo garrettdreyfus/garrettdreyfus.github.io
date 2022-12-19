@@ -21,7 +21,7 @@
   
 ** The Random Forest Model
 ** Splitting the data and training
-   I split the profiles randomly into two equally large testing and training datasets. As there are significant differences in identifying the mixed layer depth in high latitude locations, I ensured that half of the high latitude sites were in the test set and half were in the training set.
+I split the profiles randomly into two equally large testing and training datasets. As there are significant differences in identifying the mixed layer depth in high latitude locations, I ensured that half of the high latitude sites were in the test set and half were in the training set.
 ** Choosing features
    I first naively provided the random forest algorithm with the raw density at each pressure as input features. This resulted in predictions that were far from the mean oceanographer idenified mixed layer depth. I then tried using the gradient of density which yielded better results but was still not particularly performant. My next step was using every metric used in the Holte and Talley mixed layer algorithm as an input feature. This includes the original de Boyer Montegut threshold criteria and many more. A full description of the Holte and Talley metrics is included in their ___ paper ().
 
