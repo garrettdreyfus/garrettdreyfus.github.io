@@ -6,7 +6,7 @@
 
 * What is the mixed layer?
   
-Most of the ocean is highly stratified by density.The notable exception is the very top of the ocean, where the sun’s heat and the wind and waves mix the water. This layer of well-mixed water is known as the mixed layer. As the only part of the ocean directly in contact with the atmosphere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior. This makes the depth of that mixed layer an important quantity for oceanographers whether they are physicists, biologists, or chemists.
+Most of the ocean is highly stratified by density. This stratification suppresses vertical mixing. At the very top of the ocean the sun’s heat and the wind and waves mix the wate. This layer of well-mixed water is known as the mixed layer. As the only part of the ocean directly in contact with the atmosphere, the mixed layer transfers heat and freshwater from the atmosphere into the ocean interior. This makes the depth of that mixed layer an important quantity for oceanographers whether they are physicists, biologists, or chemists.
 
 * How do we use computers to find the depth of the mixed layer?
   
@@ -38,3 +38,5 @@ From browsing through the profiles I got the sense that in locations with large 
 * Closing thoughts
 
   This survey was a fun project. Ultimately it is limited by the number of respondants and profiles, but I think it shows how slippery a quantity the mixed layer depth can be. Please write me if you would be interested in viewing the data.
+
+This article's follow up on training a machine learning model to better estimate the mean VIMLD will be posted shortly.
